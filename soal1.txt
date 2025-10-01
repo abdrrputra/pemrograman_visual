@@ -1,0 +1,18 @@
+Imports System
+
+Module Program
+    Sub Main()
+        ' Data tetap
+        Dim nama As String = "Abdurrahman Putra"
+        Dim prodi As String = "Teknik Informatika"
+        Dim kampus As String = "Universitas Pelita Bangsa"
+        Dim hobi As String = "Berlari"
+
+        ' Output ke layar
+        Console.WriteLine("Halo, nama saya adalah " & nama)
+        Console.WriteLine("Saya kuliah pada jurusan " & prodi & " di " & kampus)
+        Console.WriteLine("Saya memiliki hobi " & hobi)
+
+        Console.ReadLine() ' Supaya console tidak langsung tertutup
+    End Sub
+End Module

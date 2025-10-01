@@ -1,0 +1,33 @@
+Imports System
+
+Module Program
+    Sub Main()
+        ' Bilangan sudah ditentukan
+        Dim bil1 As Integer = 100
+        Dim bil2 As Integer = 1000
+
+        ' Operasi Matematika (selalu positif)
+        Dim hasilTambah As Integer = Math.Abs(bil1 + bil2)
+        Dim hasilKali As Integer = Math.Abs(bil1 * bil2)
+        Dim hasilBagi As Integer = 0
+        Dim hasilMod As Integer = 0
+
+        If bil2 <> 0 Then
+            hasilBagi = Math.Abs(bil1 \ bil2)   ' Pembagian bulat (integer division)
+            hasilMod = Math.Abs(bil1 Mod bil2) ' Modulus
+        Else
+            Console.WriteLine("Error: Pembagian dan modulus tidak bisa dilakukan karena bilangan kedua = 0")
+        End If
+
+        ' Tampilkan hasil
+        Console.WriteLine("Bilangan 1 = " & bil1)
+        Console.WriteLine("Bilangan 2 = " & bil2)
+        Console.WriteLine()
+        Console.WriteLine("Hasil Penjumlahan = " & hasilTambah)
+        Console.WriteLine("Hasil Perkalian   = " & hasilKali)
+        Console.WriteLine("Hasil Pembagian   = " & hasilBagi)
+        Console.WriteLine("Hasil Modulus     = " & hasilMod)
+
+        Console.ReadLine()
+    End Sub
+End Module
